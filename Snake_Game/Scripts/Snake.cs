@@ -69,7 +69,7 @@ namespace Snake_Game.Scripts
                 direction = new Vector2(1, 0);
             }
 
-            if (lastUpdate >= 0.12f)
+            if (lastUpdate >= 0.11f)
             {
                 //update snake position and check for snake head hitting segments
                 Vector2 lastPos = Position;
@@ -97,7 +97,7 @@ namespace Snake_Game.Scripts
                     }
                 }
 
-                lastUpdate -= 0.12f;
+                lastUpdate -= 0.11f;
             }
 
             lastUpdate += (float)gameTime.ElapsedGameTime.TotalSeconds;
